@@ -1,5 +1,7 @@
 package main
 
+//go:generate stringer -type=RESPErrorType
+
 // RESPErrorType defines the type of errors that can occur
 type RESPErrorType int
 

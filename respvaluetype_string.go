@@ -4,9 +4,9 @@ package main
 
 import "fmt"
 
-const _RESPValueType_name = "ErrorStringSimpleStringBulkStringIntegerArray"
+const _RESPValueType_name = "ErrorStringSimpleStringBulkStringInteger"
 
-var _RESPValueType_index = [...]uint8{0, 11, 23, 33, 40, 45}
+var _RESPValueType_index = [...]uint8{0, 11, 23, 33, 40}
 
 func (i RESPValueType) String() string {
 	if i < 0 || i >= RESPValueType(len(_RESPValueType_index)-1) {

@@ -267,9 +267,3 @@ func (rs *respConnectionServer) scanBlock() error {
 	}
 	return nil
 }
-
-// PackArray takes a slice of RESPValues and serializes them into a single
-// RESPValues of type Array suitable for a handler to return as a response to a client
-func PackArray(vals []RESPValue) (*RESPValue, error) {
-	return nil, nil
-}

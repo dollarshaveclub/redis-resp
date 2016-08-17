@@ -85,7 +85,7 @@ func TestPing(t *testing.T) {
 	aborted := make(chan struct{})
 	runserver(hm, done, aborted)
 	defer close(done)
-	time.Sleep(500 * time.Millisecond)
+	time.Sleep(50 * time.Millisecond)
 
 	conn, err := net.Dial(listenType, listenAddr)
 	if err != nil {
@@ -121,7 +121,7 @@ func TestCommandWithArgs(t *testing.T) {
 	aborted := make(chan struct{})
 	runserver(hm, done, aborted)
 	defer close(done)
-	time.Sleep(500 * time.Millisecond)
+	time.Sleep(50 * time.Millisecond)
 
 	conn, err := net.Dial(listenType, listenAddr)
 	if err != nil {
